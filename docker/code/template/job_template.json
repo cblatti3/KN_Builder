@@ -1,0 +1,16 @@
+{
+    TMPLAUNCH,
+    "name": "TMPJOB",
+    "container": {
+        "type": "DOCKER",
+        "image": "TMPIMG",
+        "volumes": [TMPVMNTSTR,
+                    {"containerPath": "/etc/", "hostPath":"/etc/", "mode":"RW"}
+                   ]
+    },
+    "cpus": "TMPCPUS",
+    "retries": "1",
+    "mem": "TMPMEM",
+    "command": "TMPCMD",
+    "highPriority": "TMPPRIOR"
+}
